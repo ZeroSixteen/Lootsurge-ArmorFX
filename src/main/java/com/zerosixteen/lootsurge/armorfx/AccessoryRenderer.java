@@ -32,6 +32,6 @@ public final class AccessoryRenderer {
 			return;
 		}
 		ArmorRenderer.submitTransformCopyingModel(contextModel, state, acc.model(), state, false, collector.order(0), poseStack,
-				RenderTypes.armorCutoutNoCull(acc.texture()), light, OverlayTexture.NO_OVERLAY, 0);
+				RenderTypes.armorCutoutNoCull(acc.texture()), light, OverlayTexture.NO_OVERLAY, 0, null);
 	}
 }

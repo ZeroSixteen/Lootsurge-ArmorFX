@@ -37,7 +37,7 @@ Bones: `head, body, right_arm, left_arm, right_leg, left_leg`. Coordinates are v
 front = -z), identical to `addBox`. Reload resources (F3+T) to see edits.
 
 ## Build
-Standard Fabric project (Java 25, Loom). Copy `gradlew`, `gradlew.bat` and `gradle/wrapper/` from the Loot Surge repo
+Standard Fabric project (Java 25, Loom). The Gradle wrapper is included, so pushing to GitHub is enough:
 
 ## Honest status
 Written against the 26.2 branch of Fabric API (`ArmorRenderer`, `ResourceLoader`). It could not be compiled or run in
