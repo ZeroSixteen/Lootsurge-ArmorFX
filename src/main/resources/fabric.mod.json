@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "lootsurge_armorfx",
+	"version": "${version}",
+	"name": "Loot Surge: Armor FX",
+	"description": "Client-only visual add-on for Loot Surge. Draws horns, wings, spikes, fins and other accessories on equipped Unique armor. No gameplay, server or loot changes.",
+	"authors": ["ZeroSixteen"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": { "client": ["com.zerosixteen.lootsurge.armorfx.ArmorFxClient"] },
+	"mixins": [{ "config": "lootsurge_armorfx.mixins.json", "environment": "client" }],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": { "lootsurge": "*" }
+}

@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.zerosixteen.lootsurge.armorfx.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": ["HumanoidArmorLayerMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
