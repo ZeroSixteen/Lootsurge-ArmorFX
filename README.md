@@ -38,7 +38,6 @@ front = -z), identical to `addBox`. Reload resources (F3+T) to see edits.
 
 ## Build
 Standard Fabric project (Java 25, Loom). Copy `gradlew`, `gradlew.bat` and `gradle/wrapper/` from the Loot Surge repo
-(same versions), push, and the included GitHub Action builds `build/libs/lootsurge-armorfx-1.0.0.jar`.
 
 ## Honest status
 Written against the 26.2 branch of Fabric API (`ArmorRenderer`, `ResourceLoader`). It could not be compiled or run in
