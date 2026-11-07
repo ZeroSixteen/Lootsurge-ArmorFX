@@ -58,7 +58,7 @@ public final class AccessoryModels {
 			}
 		}
 		models = Map.copyOf(out);
-		LOGGER.info("[Loot Surge Armor FX] loaded {} armor accessory definition(s)", out.size());
+		LOGGER.info("[Loot Surge Armor FX] loaded {} armor accessory definition(s): {}", out.size(), out.keySet());
 	}
 
 	private static float f(JsonArray a, int i) {
