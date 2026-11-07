@@ -31,7 +31,7 @@ import java.util.Map;
  */
 public final class AccessoryModels {
 	private static final Logger LOGGER = LogUtils.getLogger();
-	private static final String[] BONES = {"head", "hat", "body", "right_arm", "left_arm", "right_leg", "left_leg"};
+	private static final String[] BONES = {"head", "body", "right_arm", "left_arm", "right_leg", "left_leg"};
 	private static final Map<String, float[]> PIVOTS = Map.of(
 			"right_arm", new float[]{-5f, 2f, 0f}, "left_arm", new float[]{5f, 2f, 0f},
 			"right_leg", new float[]{-1.9f, 12f, 0f}, "left_leg", new float[]{1.9f, 12f, 0f});
@@ -75,6 +75,8 @@ public final class AccessoryModels {
 			float[] p = PIVOTS.getOrDefault(b, new float[]{0f, 0f, 0f});
 			bones.put(b, root.addOrReplaceChild(b, CubeListBuilder.create(), PartPose.offset(p[0], p[1], p[2])));
 		}
+		// HumanoidModel looks up "hat" as a child of "head" (not of the root)
+		bones.get("head").addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.ZERO);
 		int n = 0;
 		for (JsonElement el : json.getAsJsonArray("cubes")) {
 			JsonObject c = el.getAsJsonObject();
